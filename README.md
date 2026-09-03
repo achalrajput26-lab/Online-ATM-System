@@ -1,38 +1,72 @@
 # 🏦 ATM System
 
-A C# console-based ATM simulation designed to model everyday banking operations through an interactive terminal experience.
+A **C# console-based ATM simulation** that demonstrates core banking operations through an interactive terminal experience.
 
-The application manages user accounts, authentication, transactions, transfers, and persistent account data.
+The application supports **multiple user accounts, secure authentication, deposits, withdrawals, money transfers, transaction tracking, daily limits, and persistent data storage**.
 
-### 💳 Banking Operations
+## 💳 Features
 
-* Create and manage multiple accounts
-* Secure login flow with PIN and passphrase recovery
-* Deposit and withdraw money
-* Daily withdrawal limit management
-* IBAN-based transfers between accounts
-* Transfer funds between personal accounts
-* Review transaction history
-* Change account PIN
+### 🔐 Authentication & Account Management
 
-### 💾 Data & Logic
+* Multiple user account support
+* PIN-based authentication
+* Passphrase-based PIN recovery
+* Limited login attempts
+* PIN change functionality
+* Account balance management
 
-Account and transaction data are persisted using **JSON**, allowing information to remain available after restarting the application.
+### 💰 Banking Operations
 
-The project also uses **LINQ** for account queries and collection management, alongside extensive input validation for user interactions.
+* Deposit money
+* Withdraw money
+* Quick withdrawal amount selection
+* Custom withdrawal amounts
+* Daily withdrawal limit
+* Remaining daily limit tracking
+* BSMV calculation on applicable transactions
+* IBAN-based money transfers
+* Transfers between personal accounts
+* Transaction history
 
-### 🔧 Built With
+### 📊 Transaction Management
 
-**C# · .NET · LINQ · System.Text.Json · File I/O**
+* Records account transactions
+* Displays transaction history
+* Tracks deposits, withdrawals, and transfers
+* Updates account balances after each transaction
+* Prevents transactions that exceed available balance or daily limits
 
-### ▶️ Run
+### 💾 Data Persistence
+
+Account and transaction data are stored in **JSON**, allowing user information and account balances to persist between application sessions.
+
+The project uses **System.Text.Json** for serialization and deserialization and **LINQ** for account and collection operations.
+
+### 🛡️ Input Validation
+
+The application includes validation for:
+
+* PIN and passphrase input
+* Account selection
+* Withdrawal amounts
+* Transfer amounts
+* IBAN input
+* Insufficient balance
+* Daily withdrawal limits
+* Invalid menu selections
+
+## 🔧 Built With
+
+**C# · .NET · LINQ · System.Text.Json · JSON · File I/O · OOP**
+
+## ▶️ Run
 
 ```bash
 dotnet run
 ```
 
-> This is an educational ATM simulation and is not intended for real financial use.
+> This project is an educational ATM simulation and is not intended for real financial use.
 
-### 👩‍💻 Author
+## 👩‍💻 Author
 
 **Hilal Nur**
