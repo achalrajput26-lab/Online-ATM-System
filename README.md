@@ -69,4 +69,4 @@ dotnet run
 
 ## 👩‍💻 Author
 
-**Hilal Nur**
+**Achal Rajput**
